@@ -3,20 +3,20 @@ export default function HowItWorksSection() {
     {
       title: "Зарегистрируйтесь на сайте",
       text: "Создайте аккаунт за несколько минут и получите доступ ко всем функциям.",
-      imageSrc: "https://via.placeholder.com/400x300",
+      imageSrc: "https://www.ecotour.by/upload/resize_cache/iblock/901/540_410_2/norwegian_fjords_40059155_1470050468_ImageGalleryLightboxLarge.jpg",
       imageAlt: "Пользователь вводит свои данные в форму регистрации на сайте.",
     },
     {
       title: "Выберите язык и создайте карточки",
       text: "Настройте свой учебный план, добавьте слова и фразы, которые хотите выучить.",
-      imageSrc: "https://via.placeholder.com/400x300",
+      imageSrc: "https://media.istockphoto.com/id/1365094219/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%B8%D0%BD%D0%BE%D0%BF%D0%BB%D0%B0%D0%BD%D0%B5%D1%82%D0%BD%D0%BE%D0%B5-%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%BE-%D0%B2-%D0%BB%D0%B5%D1%81%D1%83.jpg?s=612x612&w=0&k=20&c=HjDDAqSv7psoENhUn2C0cODacHq4Xsgd-8QJe8NhuNE=",
       imageAlt:
         "Интерфейс приложения с возможностью выбора языка и добавления новых слов.",
     },
     {
       title: "Изучайте в удобном темпе",
       text: "Практикуйтесь ежедневно и достигайте своих целей в изучении языка.",
-      imageSrc: "https://via.placeholder.com/400x300",
+      imageSrc: "https://greetcard.ru/uploads/posts/2022-05/1653153223_m42.webp",
       imageAlt:
         "Пользователь просматривает карточки на мобильном устройстве в парке.",
     },
