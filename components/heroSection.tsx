@@ -1,12 +1,13 @@
 "use client";
 
-import { Button, useDisclosure } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 import { title, subtitle } from "@/components/primitives";
-import FormModal from "./formModal";
 
-export default function HeroSection() {
-  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+type HeroSectionProps = {
+  onModalOpen: () => void;
+};
 
+export default function HeroSection({ onModalOpen }: HeroSectionProps) {
   return (
     <section className="flex flex-col items-center justify-center">
       <div className="inline-block max-w-xl text-center justify-center">
@@ -21,7 +22,12 @@ export default function HeroSection() {
       </div>
 
       <div className="flex gap-3">
-        <Button color="primary" radius="full" variant="shadow" onClick={onOpen}>
+        <Button
+          color="primary"
+          radius="full"
+          variant="shadow"
+          onClick={onModalOpen}
+        >
           Начать изучение
         </Button>
       </div>
@@ -37,7 +43,6 @@ export default function HeroSection() {
           /> */}
         </div>
       </div>
-      <FormModal isOpen={isOpen} onOpenChange={onOpenChange}></FormModal>
     </section>
   );
 }

@@ -16,7 +16,7 @@ type FormModalProps = {
 
 export default function FormModal({ isOpen, onOpenChange }: FormModalProps) {
   return (
-    <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+    <Modal size="2xl" isOpen={isOpen} onOpenChange={onOpenChange}>
       <ModalContent>
         {(onClose) => (
           <>
