@@ -1,5 +1,3 @@
-// components/BenefitsSection.js
-
 import {
   ClockIcon,
   CogIcon,
