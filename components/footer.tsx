@@ -111,10 +111,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      {/* Нижняя часть подвала */}
-      <div className="container mx-auto px-6 md:px-12 mt-12 border-t  pt-6 text-center">
-        <p>&copy; {new Date().getFullYear()} Flashcards. Все права защищены.</p>
-      </div>
     </footer>
   );
 }

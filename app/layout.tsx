@@ -47,7 +47,14 @@ export default function RootLayout({
             <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
               {children}
             </main>
-            <footer className="w-full flex items-center justify-center py-3"></footer>
+            <footer className="w-full flex items-center justify-center py-3">
+              <div className="container mx-auto px-6 md:px-12 mt-12 border-t  pt-6 text-center">
+                <p>
+                  &copy; {new Date().getFullYear()} Flashcards. Все права
+                  защищены.
+                </p>
+              </div>
+            </footer>
           </div>
         </Providers>
       </body>
