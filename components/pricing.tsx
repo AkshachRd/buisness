@@ -1,7 +1,11 @@
-export default function Pricing() {
+type PricingProps = {
+  onModalOpen: () => void;
+};
+
+export default function Pricing({ onModalOpen }: PricingProps) {
   return (
     <div>
-      <div className="min-h-screen py-12">
+      <div className="min-h-screen w-full py-12">
         <div className="container text-center">
           <p className="mb-12 ">Выберите план, который подходит именно вам</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -15,7 +19,10 @@ export default function Pricing() {
                 <li>Доступ к основным функциям</li>
                 <li>Ограниченная поддержка</li>
               </ul>
-              <button className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition duration-300">
+              <button
+                onClick={onModalOpen}
+                className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition duration-300"
+              >
                 Начать бесплатно
               </button>
             </div>
@@ -31,7 +38,10 @@ export default function Pricing() {
                 <li>Расширенные функции</li>
                 <li>Приоритетная поддержка</li>
               </ul>
-              <button className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition duration-300">
+              <button
+                onClick={onModalOpen}
+                className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition duration-300"
+              >
                 Оформить подписку
               </button>
             </div>
@@ -47,7 +57,10 @@ export default function Pricing() {
                 <li>Доступ для команды до 5 человек</li>
                 <li>Персональный менеджер</li>
               </ul>
-              <button className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition duration-300">
+              <button
+                onClick={onModalOpen}
+                className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition duration-300"
+              >
                 Оформить подписку
               </button>
             </div>
