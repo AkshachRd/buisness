@@ -1,21 +1,26 @@
+import alexey from "@/assets/Alexey.jpg";
+import elena from "@/assets/Elena.jpg";
+import maria from "@/assets/Maria.jpg";
+import Image from "next/image";
+
 export default function TestimonialsSection() {
   const testimonials = [
     {
       name: "Мария Петрова",
       text: "Благодаря Flashcards я наконец-то заговорила на испанском! Очень удобно и эффективно.",
-      imageSrc: "https://source.unsplash.com/collection/888146/400x400", // Замените на реальное изображение
+      imageSrc: maria,
       imageAlt: "Мария улыбается на фоне испанской архитектуры.",
     },
     {
       name: "Алексей Смирнов",
       text: "Отличное приложение для тех, кто ценит свое время. Рекомендую всем!",
-      imageSrc: "https://source.unsplash.com/collection/888145/400x400", // Замените на реальное изображение
+      imageSrc: alexey,
       imageAlt: "Алексей сидит в кафе с ноутбуком и учебником.",
     },
     {
       name: "Елена Иванова",
       text: "Интерфейс простой и понятный, с удовольствием занимаюсь каждый день.",
-      imageSrc: "https://source.unsplash.com/collection/888144/400x400", // Замените на реальное изображение
+      imageSrc: elena,
       imageAlt: "Елена работает за компьютером дома, рядом чашка чая.",
     },
   ];
@@ -36,7 +41,7 @@ export default function TestimonialsSection() {
               className="light text-foreground bg-background p-6 rounded-lg shadow-lg flex flex-col items-center"
             >
               {/* Фото пользователя */}
-              <img
+              <Image
                 src={testimonial.imageSrc}
                 alt={testimonial.imageAlt}
                 className="w-24 h-24 object-cover rounded-full shadow-md mb-6"
